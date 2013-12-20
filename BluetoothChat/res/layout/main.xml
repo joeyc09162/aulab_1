@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <!-- 顯示設備列表-->
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout_Rival" android:layout_gravity="right">
+		<TextView 	android:id="@+id/textView_Rival" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:layout_weight="100"
+					android:layout_gravity="right" android:text="　　　　　　　　　　　　　對手名：???　　血量：1000/1000">
+		</TextView>
+		<ImageView 	android:id="@+id/imageView_Rival" 
+					android:layout_height="wrap_content" 
+					android:src="@drawable/images" 
+					android:layout_width="wrap_content" 
+					android:layout_gravity="right">
+		</ImageView>
+ 	</LinearLayout>
+ 	
+ 	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout_MySelf" android:layout_gravity="right">
+		<ImageView 	android:id="@+id/imageView_MySelf"  
+					android:src="@drawable/app_icon" 
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content" >
+		</ImageView>
+		
+		<TextView 	android:text="TextView_MySelf" 
+					android:id="@+id/textView_MySelf" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:layout_weight="10"
+					android:layout_gravity="right">
+		</TextView>
+ 	</LinearLayout>
+    
+    <!-- 顯示發送消息的編輯框-->
+ 	<ListView android:layout_weight="1" android:stackFromBottom="true" android:transcriptMode="alwaysScroll" android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@+id/in" android:animationCache="false" android:layout_gravity="right"></ListView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:layout_gravity="right">
+        <TextView 	android:id="@+id/textView_pro" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:text="＃效果：">
+        </TextView>
+        
+        <ImageView 	android:id="@+id/imageView_AffectWater" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:src="@drawable/waterball">
+        </ImageView>
+        
+        <TextView 	android:id="@+id/textView4" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:text="　">
+        </TextView>
+        
+        <ImageView 	android:id="@+id/imageView_AffectSunny" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:src="@drawable/sunnyball">
+        </ImageView>
+        
+        <TextView 	android:id="@+id/textView7" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:text="　">
+        </TextView>
+        
+        <TextView 	android:id="@+id/textView9" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:text="＃自身屬性值：">
+        </TextView>
+        
+        <ImageView 	android:id="@+id/imageView6" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:src="@drawable/waterball">
+        </ImageView>
+        
+        <TextView 	android:id="@+id/textView_WaterValue" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content">
+        </TextView>
+        
+        <ImageView 	android:id="@+id/imageView9" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:src="@drawable/sunnyball">
+        </ImageView>
+        
+        <TextView 	android:id="@+id/textView_SunnyValue" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content">
+        </TextView>
+        
+        <TextView 	android:id="@+id/textView1" 
+        			android:layout_height="wrap_content" 
+        			android:layout_width="wrap_content" 
+        			android:layout_weight="5">
+        </TextView>
+        
+        <Button 	android:text="1"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:id="@+id/button1_1" 
+					android:layout_marginLeft="10px">
+		</Button>
+					
+        <Button 	android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:text="2" 
+        			android:id="@+id/button1_2" 
+        			android:layout_marginLeft="10px">
+        </Button>
+        
+        <Button 	android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_marginLeft="10px" 
+            		android:text="3" 
+            		android:id="@+id/button1_3"/>
+    </LinearLayout>
+    
+    <LinearLayout 	android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout2" android:layout_gravity="right">
+        
+        <TextView 	android:id="@+id/textView_pro2" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:text="　　　　">
+        </TextView>
+        
+        <ImageView 	android:id="@+id/imageView_AffectFire" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:src="@drawable/fireball">
+        </ImageView>
+        
+        <TextView 	android:id="@+id/textView5" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:text="　">
+        </TextView>
+        
+        <ImageView 	android:id="@+id/imageView_AffectDark" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:src="@drawable/darkball">
+        </ImageView>
+        
+        <TextView 	android:id="@+id/textView5" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:text="　">
+        </TextView>
+        
+        <TextView 	android:id="@+id/textView_values" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:text="　　 　 　　 　">
+        </TextView>
+        
+        <ImageView 	android:id="@+id/imageView7" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:src="@drawable/fireball">
+        </ImageView>
+        
+        <TextView 	android:id="@+id/textView_FireValue" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content">
+        </TextView>
+        
+        <ImageView 	android:id="@+id/imageView10" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:src="@drawable/darkball">
+        </ImageView>
+        
+        <TextView 	android:id="@+id/textView_DarkValue" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content">
+        </TextView>
+        
+        <TextView 	android:id="@+id/textView2" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:layout_weight="5000" >
+        </TextView>
+        
+        <Button 	android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:text="4" 
+        			android:id="@+id/button2_1"
+        			android:layout_marginLeft="10px">
+        </Button>
+        <Button 	android:layout_gravity="right" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:layout_marginLeft="10px" 
+        			android:text="5" 
+        			android:id="@+id/button2_2">
+        </Button>
+        
+        <Button 	android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:layout_gravity="right" 
+        			android:layout_marginLeft="10px" 
+        			android:text="6" 
+        			android:id="@+id/button2_3">
+        </Button>
+    </LinearLayout>
+    
+    <LinearLayout 	android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout3" android:layout_gravity="right">
+        <LinearLayout android:layout_width="wrap_content" android:id="@+id/linearLayout4" android:layout_height="fill_parent">
+	        <TextView 	android:id="@+id/textView_pro3" 
+	        			android:layout_width="wrap_content" 
+	        			android:layout_height="wrap_content" 
+	        			android:text="　　　　">
+	        </TextView>
+	        
+	        <ImageView 	android:id="@+id/imageView_AffectStone" 
+	        			android:layout_width="wrap_content" 
+	        			android:layout_height="wrap_content" 
+	        			android:src="@drawable/stoneball">
+	        </ImageView>
+	        
+	        <TextView 	android:id="@+id/textView6" 
+	        			android:layout_width="wrap_content" 
+	        			android:layout_height="wrap_content" 
+	        			android:focusable="false"
+	        			android:text="　">
+	        </TextView>
+	        
+	        <ImageView 	android:id="@+id/imageView5" 
+	        			android:layout_width="wrap_content" 
+	        			android:layout_height="wrap_content" 
+	        			android:src="@drawable/zeroball">
+	        </ImageView>
+	        
+	        <TextView 	android:id="@+id/textView5" 
+	        			android:layout_width="wrap_content" 
+	        			android:layout_height="wrap_content" 
+	        			android:text="　　　　　 　　　">
+	        </TextView>
+	        
+	        <TextView 	android:id="@+id/textView_values" 
+	        			android:layout_width="wrap_content" 
+	        			android:layout_height="wrap_content" 
+	        			android:text="">
+	        </TextView>
+	        
+	        <ImageView 	android:id="@+id/imageView7" 
+	        			android:layout_width="wrap_content" 
+	        			android:layout_height="wrap_content" 
+	        			android:src="@drawable/stoneball">
+	        </ImageView>
+	        
+	        <TextView 	android:id="@+id/textView_StoneValue" 
+	        			android:layout_width="wrap_content" 
+	        			android:layout_height="wrap_content">
+	        </TextView>
+	        
+	        <ImageView 	android:id="@+id/imageView10" 
+	        			android:layout_width="wrap_content" 
+	        			android:layout_height="wrap_content" 
+	        			android:src="@drawable/zeroball">
+	        </ImageView>
+	        
+	        <TextView 	android:id="@+id/textView_DarkValue" 
+	        			android:layout_width="wrap_content" 
+	        			android:layout_height="wrap_content"
+	        			android:text="　　 　 　　　　　">
+	        </TextView>
+        
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:id="@+id/linearLayout5" android:layout_height="fill_parent" android:layout_gravity="right">
+         		
+                <TextView 	android:id="@+id/textView" 
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content" 
+        					android:layout_gravity="right"
+        					android:layout_weight="5000">
+        		</TextView>
+        		
+       		  	<Button 	android:text="Throw!!" 
+        					android:id="@+id/Button_throw" 
+        					android:layout_width="90dip" 
+        					android:layout_height="wrap_content"
+        					android:layout_gravity="right"
+        					android:layout_marginLeft="10px">
+        		</Button>
+        </LinearLayout>
+        	
+        
+    </LinearLayout>
+</LinearLayout>

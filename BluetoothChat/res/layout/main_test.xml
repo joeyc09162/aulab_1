@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:id="@+id/Commy">
+  <FrameLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@+id/mainLayout">
+    		<Button android:text="1" 
+    				android:layout_gravity="left" 
+    				android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content" 
+    				android:id="@+id/button1_1" 
+    				android:layout_marginTop="190px"
+    				android:layout_marginLeft="620px"></Button>
+    				
+        	<Button android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:text="2" 
+        			android:id="@+id/button1_2"
+        			android:layout_gravity="left"  
+        			android:layout_marginTop="190px"
+        			android:layout_marginLeft="660px"></Button>
+        	<Button android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="3" 
+            		android:id="@+id/button1_3"
+            		android:layout_gravity="left"  
+        			android:layout_marginTop="190px"
+        			android:layout_marginLeft="700px"/>
+    		<Button android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content" 
+    				android:text="4" 
+    				android:id="@+id/button2_1" 
+    				android:layout_gravity="left"  
+        			android:layout_marginTop="260px"
+        			android:layout_marginLeft="620px"></Button>
+        	<Button android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:text="5"
+        			android:id="@+id/button2_2"
+        			android:layout_gravity="left"  
+        			android:layout_marginTop="260px"
+        			android:layout_marginLeft="660px"></Button>
+        	<Button android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content"
+        			android:text="6" 
+        			android:id="@+id/button2_3"
+        			android:layout_gravity="left"  
+        			android:layout_marginTop="260px"
+        			android:layout_marginLeft="700px"></Button>
+    		<EditText 	android:layout_gravity="bottom" 
+    					android:layout_width="wrap_content" 
+    					android:layout_height="wrap_content" 
+    					android:id="@+id/edit_text_out" 
+    					android:layout_weight="1"></EditText>
+       	 	<Button android:layout_width="wrap_content" 
+       	 			android:layout_height="wrap_content" 
+       	 			android:text="@string/send" 
+       	 			android:id="@+id/button_send"
+       	 			android:layout_gravity="left"  
+        			android:layout_marginTop="330px"
+        			android:layout_marginLeft="220px"></Button>
+        	<Button android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:text="7" 
+        			android:id="@+id/button3_1"
+        			android:layout_gravity="left"  
+        			android:layout_marginTop="330px"
+        			android:layout_marginLeft="620px"></Button>
+        	<Button android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:layout_gravity="left" 
+        			android:layout_marginTop="330px"
+        			android:layout_marginLeft="660px" 
+        			android:text="8" 
+        			android:id="@+id/button3_2"></Button>
+        	<Button android:text="9" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content"
+        			android:layout_gravity="left" 
+        			android:layout_marginTop="330px" 
+        			android:layout_marginLeft="700px" 
+        			android:id="@+id/button3_3"></Button>
+        	     		
+        </FrameLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/LLayout">
+        <ListView 	android:id="@+id/in"     				android:transcriptMode="alwaysScroll" 
+        				android:layout_width="fill_parent" 
+        				android:layout_height="fill_parent" 
+        				android:layout_gravity="left" 
+        				android:animationCache="false" 
+        				android:stackFromBottom="true"></ListView>
+    </LinearLayout>
+    
+</FrameLayout>
