@@ -38,6 +38,7 @@ public class AppleActivity extends Activity{
 				
 				Intent in = new Intent();
 				in.setClass(AppleActivity.this, BluetoothChat.class);
+				System.out.println("yes");
 				
 				try{
 					FileInputStream fi = openFileInput("blood.text");
